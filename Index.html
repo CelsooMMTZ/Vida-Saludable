@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre recetas saludables, rutinas de ejercicio, videos y artículos sobre cómo llevar una vida saludable.">
+    <title>Vida Saludable - Recetas y Rutinas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2d8659;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        section {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        .recipe, .routine, .article {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .recipe img, .routine img, .article img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .content {
+            flex: 1;
+        }
+        .video-section {
+            text-align: center;
+        }
+        .video-section iframe {
+            width: 80%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .article-card {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .article-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .article-card h3 {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+        .article-card p {
+            padding: 0 10px 10px;
+        }
+        @media (max-width: 768px) {
+            .article-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vida Saludable</h1>
+        <p>Tu guía completa para una vida sana</p>
+    </header>
+    <nav>
+        <a href="#recetas">Recetas</a>
+        <a href="#rutinas">Rutinas de Ejercicio</a>
+        <a href="#videos">Videos</a>
+        <a href="#articulos">Artículos</a>
+    </nav>
+    <div class="container">
+        <!-- Sección de Recetas -->
+        <section id="recetas">
+            <h2>Recetas Diarias</h2>
+            <p>Deliciosas recetas para cada día de la semana:</p>
+            <!-- Recetas completas -->
+            <div class="recipe">
+                <img src="lunes.jpg"  height="150" width="150"></img></td>
+                <div class="content">
+                    <h3>Lunes</h3>
+                    <p><strong>1:</strong> Ensalada de quinoa con aguacate.</p>
+                    <p><strong>2:</strong> Pollo salteado con vegetales.</p>
+                    <p><strong>3:</strong> Tazón de yogur con frutas frescas.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="martes.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Martes</h3>
+                    <p><strong>1:</strong> Sopa de lentejas con pan integral.</p>
+                    <p><strong>2:</strong> Filete de pescado con arroz.</p>
+                    <p><strong>3:</strong> Smoothie de espinacas y avena.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="miercoles.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Miércoles</h3>
+                    <p><strong>1:</strong> Tacos de lechuga con carne magra.</p>
+                    <p><strong>2:</strong> Pollo a la parrilla con espárragos.</p>
+                    <p><strong>3:</strong> Bowl de frutas con granola.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="jueves.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Jueves</h3>
+                    <p><strong>1:</strong> Ensalada César con pollo.</p>
+                    <p><strong>2:</strong> Pizza casera con base de coliflor.</p>
+                    <p><strong>3:</strong> Helado casero de plátano y cacao.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="viernes.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Viernes</h3>
+                    <p><strong>1:</strong> Omelette de champiñones y espinacas.</p>
+                    <p><strong>2:</strong> Salmón al horno con papas.</p>
+                    <p><strong>3:</strong> Batido de mango y almendras.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="sabado.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Sábado</h3>
+                    <p><strong>1:</strong> Tortitas de avena y plátano.</p>
+                    <p><strong>2:</strong> Ensalada de garbanzos y aguacate.</p>
+                    <p><strong>3:</strong> Té helado de frutas casero.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <img src="domingo.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Domingo</h3>
+                    <p><strong>1:</strong> Panqueques integrales con miel.</p>
+                    <p><strong>2:</strong> Sopa de verduras casera.</p>
+                    <p><strong>3:</strong> Smoothie de frutos rojos.</p>
+                </div>
+            </div>
+        </section>
+
+
+               </nav>
+    <div class="container">
+        <!-- Sección de Rutinas -->
+        <section id="rutinas">
+            <h2>Rutinas de Ejercicio</h2>
+            <p>Ejercicios detallados para cada día:</p>
+            <!-- Rutinas completas -->
+            <div class="routine">
+                <img src="gym lunes.jpg" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Lunes</h3>
+                    <ul>
+                        <li>20 minutos de caminata rápida.</li>
+                        <li>3 series de 15 sentadillas.</li>
+                        <li>Plancha abdominal: 30 segundos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="routine">
+                <img src="martes gym.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Martes</h3>
+                    <ul>
+                        <li>10 minutos de yoga.</li>
+                        <li>3 series de 10 flexiones.</li>
+                        <li>10 minutos de estiramientos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="routine">
+                <img src="miercoles gym.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Miércoles</h3>
+                    <ul>
+                        <li>15 minutos de cardio moderado.</li>
+                        <li>3 series de 12 estocadas.</li>
+                        <li>2 minutos de plancha con rotación lateral.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="routine">
+                <img src="jueves gym.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Jueves</h3>
+                    <ul>
+                        <li>5 minutos de salto de cuerda.</li>
+                        <li>3 series de 15 burpees.</li>
+                        <li>20 minutos de caminata lenta.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="routine">
+                <img src="viernes gym.jpg"height="150" width="150"></img></td>
+
+                <div class="content">
+                    <h3>Viernes</h3>
+                    <ul>
+                        <li>10 minutos de trote suave.</li>
+                        <li>4 series de 12 sentadillas con salto.</li>
+                        <li>30 segundos de plancha inversa.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="routine">
+                <img src="sabado gym.jpg"height="150" width="150"></img></td>
+                <div class="content">
+                    <h3>Sábado</h3>
+                    <ul>
+                        <li>30 minutos de caminata al aire libre.</li>
+                        <li>3 series de 15 abdominales bicicleta.</li>
+                        <li>10 minutos de estiramientos de cuerpo completo.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="routine">
+                <img src="domingo gym.jpg"height="150" width="150"></img></td>
+                <div class="content">
+                    <h3>Domingo</h3>
+                    <ul>
+                        <li>Sesión de yoga relajante (30 minutos).</li>
+                        <li>Ejercicios de respiración consciente.</li>
+                        <li>Caminata ligera de 20 minutos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Video -->
+        <section id="videos" class="video-section">
+            <video controls auto´play width="700" height="600"
+<source src="C:\Users\celsp\OneDrive\Documentos\quimica proyecto\video.mp4" type="video/mp4">
+</video>
+        </section>
+
+        <!-- Sección de Artículos -->
+        <section id="articulos">
+            <h2>Artículos Relacionados</h2>
+            <div class="articles">
+                <div class="article-card">
+                    <img src="descanso.jpg" height="300" width="150"></img></td>
+                    <a href="https://www.esteveteijin.com/por-que-es-importante-tener-un-buen-descanso/"_blank"> La importancia del descanso </a>
+
+                    <p>Descubre cómo el sueño afecta tu salud y energía diaria.</p>
+                </div>
+                <div class="article-card">
+                    <img src="habitos.jpg" height="300" width="150"></img></td>
+                    <a href="https://vidasaludable.udec.cl/node/239"_blank"> Como crear habitos </a>
+
+                    <p>Tips para mantener hábitos que mejoren tu calidad de vida.</p>
+                </div>
+                <div class="article-card">
+                    <img src="agua.jpg" height="300" width="150"></img></td>
+                   <a href="https://www.hhs.texas.gov/sites/default/files/documents/services/health/texercise/importance-of-hydration-es.pdf"_blank"> Beneficios de la hidrataciòn </a>
+                    <p>¿Por qué es importante mantenerte hidratado cada día?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Vida Saludable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
